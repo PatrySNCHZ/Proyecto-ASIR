@@ -28,7 +28,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#">Noticias</a>
+        <a class="nav-link" href="http://gamesnow.x10host.com/public/notices">Noticias</a>
       </li>
       
       <li class="nav-item dropdown">
@@ -43,11 +43,11 @@
         </div>
       
          <li class="nav-item">
-            <a class="nav-link" href="#">GOTWs</a>
+            <a class="nav-link" href="http://gamesnow.x10host.com/public/gotw">GOTWs</a>
         </li>
         
         <li class="nav-item">
-            <a class="nav-link" href="#">Contacta con nosotros</a>
+            <a class="nav-link" href="http://gamesnow.x10host.com/public/contactus">Contacta con nosotros</a>
         </li>
         
     </ul>

@@ -15,5 +15,5 @@
 Route::get('/', "PaginasController@inicio");
 Route::get('/notices', "PaginasController@notices");
 Route::get('/articles', "PaginasController@articles");
-Route::get('/bestgame', "PaginasController@gotw");
+Route::get('/gotw', "PaginasController@gotw");
 Route::get('/contactus', "PaginasController@contactus");
