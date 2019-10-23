@@ -17,3 +17,6 @@ Route::get('/notices', "PaginasController@notices");
 Route::get('/articles', "PaginasController@articles");
 Route::get('/gotw', "PaginasController@gotw");
 Route::get('/contactus', "PaginasController@contactus");
+
+Route::get('/iniciocrear',"PlataformaController@index");
+Route::get('/crearplataforma', "PlataformaController@create"); 

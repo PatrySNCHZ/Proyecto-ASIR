@@ -37,8 +37,6 @@ class PaginasController extends Controller{
         return view ('contactus');
     }
     
-    
-    
 };
 
 
