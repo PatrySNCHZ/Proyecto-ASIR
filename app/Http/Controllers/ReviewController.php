@@ -21,7 +21,7 @@ class ReviewController extends Controller {
         $plataformas = Plataforma::all();
         $videojuegos = Videojuego::all();
         $users = User::all();
-        
+
         return view('reviews.reviews', compact("videojuegos", "reviews", "users", "plataformas"));
     }
 
@@ -91,7 +91,6 @@ class ReviewController extends Controller {
         $reviews = Review::find($id);
         return view('reviews.review', compact('reviews', 'videojuegos', 'plataformas'));
     }
-   
 
     /**
      * Show the form for editing the specified resource.
@@ -106,7 +105,7 @@ class ReviewController extends Controller {
         $users = User::all();
 
 
-        return view("reviews.edit", compact("reviews","plataformas", "videojuegos", "users"));
+        return view("reviews.edit", compact("reviews", "plataformas", "videojuegos", "users"));
     }
 
     /**

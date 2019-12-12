@@ -18,8 +18,8 @@
         width: 500px; 
     }
     .botones {
-            padding-top: 20px;
-        }
+        padding-top: 20px;
+    }
 
 </style>
 
@@ -49,12 +49,12 @@
         </div>
 
         <div class="botones">
-                <input type="submit" name="enviar" values="Enviar" class="btn btn-primary">
-                <input type="reset" name="Borrar" values="Borrar" class="btn btn-primary">
-  
+            <input type="submit" name="enviar" values="Enviar" class="btn btn-primary">
+            <input type="reset" name="Borrar" values="Borrar" class="btn btn-primary">
+
         </div>        
-                
-                <a class="btn btn-link" href="/accesorios" > Ver los accesorios</a>
+
+        <a class="btn btn-link" href="/accesorios" > Ver los accesorios</a>
     </form>
 </div>
 @endsection

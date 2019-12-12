@@ -6,36 +6,29 @@
 
 @section("base")
 
-<!--
-<style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         
-</style>
--->
 
 <style>
 
     .base{
         padding: 30px;
     }    
-    
+
     body { background: white url(../images/mosaico.jpg);
            background-repeat: repeat; 
     }
-    
+
     h1,h3 {
         color: #005cc5;
     }
-    
+
     .list-group {
         padding-top: 15px;
     }
-    
+
     .carousel-item {
-        width: 1000 px;
         height: 650px;
     }
-    
+
 </style>
 <body>    
 
@@ -43,7 +36,7 @@
         <div class="row">
             <div class="col-sm">
                 <h1> Bienvenido a GamesNow </h1>
-                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -72,54 +65,22 @@
 
             </div>
             <div class="col-sm">
-                
-                
-                   <ul class="list-group">
+
+
+                <ul class="list-group">
                     <h3>Canales de interés:</h3>
-                    <li class="list-group-item"><a href="https://www.twitch.com" target="_blank">Twitch</a></li>
-                    <li class="list-group-item"><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-                    <li class="list-group-item"><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li class="list-group-item"><a href="https://www.twitch.tv/proyectogamesnow" target="_blank">Twitch</a></li>
+                    <li class="list-group-item"><a href="https://www.youtube.com/channel/UCstbOZ47Afd42ln1zS7B2Cg?disable_polymer=true" target="_blank">Youtube</a></li>
+                    <li class="list-group-item"><a href="https://www.twitter.com/ProGamesNow" target="_blank">Twitter</a></li>
                     <li class="list-group-item"><a href="https://www.instant-gaming.com" target="_blank">Visita Instant-Gaming para juegos a menor precio</a></li>
                     <li class="list-group-item"><a href="https://www.GAME.es" target="_blank">Enlace a página de GAME.es</a></li></li>
                 </ul>
-                
-                
 
-               
 
-<!--
+
+
             </div>
-            <div class="col-sm">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">GOTWs</th>
-                            <th scope="col">Título</th>
-                            <th scope="col">Plataforma</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>The Last of Us Part II</td>
-                            <td>Playstation 4</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Astral Chain</td>
-                            <td>Nintendo Switch</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Gears 5</td>
-                            <td>Xbox</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
--->
         </div>
-    </div>
-    @endsection
-    @section("pie")
-    @endsection
+        @endsection
+        @section("pie")
+        @endsection

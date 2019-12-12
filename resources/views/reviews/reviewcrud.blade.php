@@ -18,7 +18,7 @@
     }
 
     h1 {
-       width: 1800px;
+        width: 1800px;
     }
     #image{
         width: 900px;
@@ -52,7 +52,7 @@
                 @foreach($plataformas as $review)
                 <a href="/plataformas/{{$reviews->plataformas_id}}">{{$review->Nombre_Plataforma}}</a>
                 @endforeach    
-                
+
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                 @foreach($plataformas as $review)
                 <a href="{{route('reviews.edit',$reviews->id)}}">Editar</a>

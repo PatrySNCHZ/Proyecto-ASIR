@@ -30,7 +30,7 @@
                     <p class="card-text">{{$plataformas->Portatil== 0 ? 'No' : 'Sí'}} es portátil</p>
                     <p class="card-text"> Descripción: </p>
                     <text width="550">
-                    
+
                     {{$plataformas->descripcion}}
 
                     </text>

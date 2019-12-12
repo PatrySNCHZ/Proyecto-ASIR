@@ -11,11 +11,6 @@ class PaginasController extends Controller {
         return view('welcome');
     }
 
-    //public function crud() {
-
-    //    return view('welcomecrud');
-    // }
-
     public function notices() {
 
         return view('notices');

@@ -24,11 +24,11 @@
         <td>
             Género
         </td>
-        
+
         <td>
-           Imagen
+            Imagen
         </td>
-        
+
     </tr>
 
     @foreach($videojuegos as $videojuego)

@@ -21,7 +21,7 @@
     .botones {
         padding-top: 20px;
     }
-    
+
     .borra {
         padding-top: 20px;
     }
@@ -59,7 +59,7 @@
         <div class="botones">
             <input type="submit" name="enviar" values="Enviar" class="btn btn-primary">
             <a class="btn btn-link" href="/accesorios" > Atrás </a>
-           
+
 
         </div>        
 
@@ -71,7 +71,7 @@
         <input type="hidden" name="_method" value="DELETE">
         <input type="submit" name="Eliminar registro" class="btn btn-primary" value="Eliminar registro" ONCLICK="return confirm('¿Está seguro de que desea borrar?')"> 
     </form>
-       
+
 </div>
 
 

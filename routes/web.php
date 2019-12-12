@@ -14,13 +14,13 @@ use App\Plataforma;
   |
  */
 
-Route::get('/', function(){
- $user = Auth::user();
-        if ($user->EsAdmin()) {
-            return view('welcomecrud');
-        } else {
-            return view('welcome');
-        }
+Route::get('/', function() {
+    $user = Auth::user();
+    if ($user->EsAdmin()) {
+        return view('welcomecrud');
+    } else {
+        return view('welcome');
+    }
 });
 
 
@@ -58,7 +58,7 @@ Route::get("/plataformas/{id}/videojuegos", function ($id) {
 
 Route::get("/videojuegos/{id}/plataformas", function ($id) {
     $plataforma = Plataforma::find($id);
-     return view('lista',compact('plataforma'));
+    return view('lista', compact('plataforma'));
 });
 
 
@@ -73,7 +73,7 @@ route::get('/plataformavideojuego', function() {
 });
 
 Route::name('imprimir')->get('/imprimir', 'PDFController@imprimir');
- 
+
 
 /* $user = Auth::user();
     if ($user->esAdmin()) {

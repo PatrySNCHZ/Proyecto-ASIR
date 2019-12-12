@@ -37,14 +37,14 @@ use App\Http\Controler\PDFController;
                 font-family: Calibri, sans-serif;
                 table-layout: fixed;
                 width: 700px;
-           
+
             }
-           th,
+            th,
             td {
-            width: 100px;
-            overflow: hidden;
-                }
-            
+                width: 100px;
+                overflow: hidden;
+            }
+
 
         </style> 
     </head>
@@ -79,7 +79,7 @@ use App\Http\Controler\PDFController;
                     <td class='row'>{{date('d-m-Y', strtotime($videojuego->Fecha_Salida))}}</td>
                     <td class='row'>{{$videojuego->Precio}}</td>
                     <td class='row'>{{$videojuego->genero}}</td>
-                    
+
 
                 </tr>
                 @endforeach

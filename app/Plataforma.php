@@ -9,19 +9,7 @@ class Plataforma extends Model {
 
     protected $fillable = ['Nombre_Plataforma', 'Empresa_Plataforma', 'Fecha_Salida_Plataforma', 'descripcion', 'Precio', 'Portatil'];
 
-    /*
-    public function plataformasxvideojuegos($id) {
-        $plataformas=Plataforma::findOrFail($id);
-        return view('consolas.videojuegos', compact('plataformas'));
-    }
-    
-    public function plataformavideojuego($id)
-    {
-        $videojuegop=Videojuego::All();
-        $plataformav=Plataforma::findOrFail($id);
-        return view('consolas.asignarjuego', compact ('videojuegop', 'plataformav'));
-    }
-    */
+
     public function anadirplataformavideojuego (Request $request, $id){
         $plataforma=Plataforma::findOrFail($id);
         $plataforma->update($request->all());

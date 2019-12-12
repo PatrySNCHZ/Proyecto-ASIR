@@ -21,7 +21,7 @@ class AccesoriosController extends Controller {
         return view("accesorios.index", compact("accesorios", "plataformas"));
     }
 
-        public function index2() {
+    public function index2() {
         $accesorios = Accesorio::listar_plataformas();
         $plataformas = Plataforma::all();
 
@@ -52,9 +52,8 @@ class AccesoriosController extends Controller {
         $accesorios->Precio = $request->Precio;
         $accesorios->plataformas_id = $request->plataformas_id;
         $accesorios->save();
-      
+
         return redirect()->back();
-        
     }
 
     /**

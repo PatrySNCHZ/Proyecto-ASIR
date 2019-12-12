@@ -8,10 +8,10 @@
 
     .form-control{
         width: 500px; 
-    
-     .botones {
-        padding-top: 20px;
-    }
+
+        .botones {
+            padding-top: 20px;
+        }
 
     }
 </style>
@@ -53,24 +53,24 @@
     </div>
 
     <div class="form-group">
-           <label for="sinopsis">Sinopsis: </label>
-            <textarea name="sinopsis" class="form-control" rows="3"></textarea>
+        <label for="sinopsis">Sinopsis: </label>
+        <textarea name="sinopsis" class="form-control" rows="3"></textarea>
     </div>
-    
-    
+
+
     <div>
         <label for="file"> Sube la imagen: </label> <br/> 
         {!!Form::file('file')!!}
     </div>    
-<br/>
+    <br/>
 
     <div class="boton">
-            <button type="submit" name="Enviar" values="Enviar" class="btn btn-primary">Añadir a la base de datos</button>
-            <input type="reset" name="Borrar" values="Borrar campos" class="btn btn-primary">
-            <br/>
-            <a class="btn btn-link" href="/videojuegos" > Ver los videojuegos</a>
-        </div>
-    </form>
+        <button type="submit" name="Enviar" values="Enviar" class="btn btn-primary">Añadir a la base de datos</button>
+        <input type="reset" name="Borrar" values="Borrar campos" class="btn btn-primary">
+        <br/>
+        <a class="btn btn-link" href="/videojuegos" > Ver los videojuegos</a>
+    </div>
+</form>
 
 
 @yield("formulariovideojuego")

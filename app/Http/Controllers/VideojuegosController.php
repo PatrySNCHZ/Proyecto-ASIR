@@ -21,7 +21,7 @@ class VideojuegosController extends Controller {
         return view("videojuegos.index", compact("videojuegos", "generos"));
     }
 
-      public function index2() {
+    public function index2() {
         $videojuegos = Videojuego::listar_generos();
         $generos = Genero::all();
 
@@ -47,31 +47,30 @@ class VideojuegosController extends Controller {
      */
     public function store(Request $request) {
 
-      /*  $videojuegos = new Videojuego;
+        /*  $videojuegos = new Videojuego;
 
-        $videojuegos->Nombre_Videojuego = $request->Nombre_Videojuego;
-        $videojuegos->Fecha_Salida = $request->Fecha_Salida;
-        $videojuegos->Precio = $request->Precio;
-        $videojuegos->genero_id = $request->genero_id;
-        $videojuegos->Ruta = $request->Ruta;
-        $videojuegos->save(); */
-        
-        
-        $videojuegos=$request->all();
-        if($archivo=$request->file('file')){
-        $nombre=$archivo->getClientOriginalName();
-        $archivo->move('images', $nombre);
-        $videojuegos['Ruta']=$nombre;
-        
-}
-        Videojuego::create($videojuegos); 
+          $videojuegos->Nombre_Videojuego = $request->Nombre_Videojuego;
+          $videojuegos->Fecha_Salida = $request->Fecha_Salida;
+          $videojuegos->Precio = $request->Precio;
+          $videojuegos->genero_id = $request->genero_id;
+          $videojuegos->Ruta = $request->Ruta;
+          $videojuegos->save(); */
+
+
+        $videojuegos = $request->all();
+        if ($archivo = $request->file('file')) {
+            $nombre = $archivo->getClientOriginalName();
+            $archivo->move('images', $nombre);
+            $videojuegos['Ruta'] = $nombre;
+        }
+        Videojuego::create($videojuegos);
         return redirect()->back();
 
 
 
-      //  $videojuegos->save();
+        //  $videojuegos->save();
     }
-        
+
     // }
 
     /**

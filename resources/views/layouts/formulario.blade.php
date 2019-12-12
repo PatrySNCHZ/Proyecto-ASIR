@@ -44,14 +44,14 @@
             <label><input type="radio" id="smt-fld-1-2" name="optradio1" value="true">&nbsp;Sí&nbsp;</label> | 
             <label><input type="radio" id="smt-fld-1-3" name="optradio1" false="false">&nbsp;No&nbsp;</label>
         </div>
-      
-         <div>
+
+        <div>
             <label for="descripcion">Descripción: </label>
             <textarea name="descripcion" class="form-control" id="descripcion" rows="3"></textarea>
-         </div>
-    
-        
-        
+        </div>
+
+
+
         <div class="boton">
             <button type="submit" name="Enviar" values="Enviar" class="btn btn-primary">Añadir a la base de datos</button>
             <input type="reset" name="Borrar" values="Borrar campos" class="btn btn-primary">

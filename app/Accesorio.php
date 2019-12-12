@@ -8,10 +8,6 @@ class Accesorio extends Model {
 
     protected $fillable = ['Nombre_Accesorio', 'Precio'];
 
-// public function plataforma()
-    //{
-    //    return $this->belongsTo('App\Plataforma');
-    // }
 
     public static function listar_plataformas() {
         $sql = Accesorio::join('plataformas as p', 'p.id', '=', 'accesorios.plataformas_id')

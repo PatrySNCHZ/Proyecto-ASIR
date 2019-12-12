@@ -2,12 +2,12 @@
     .buscador{
         margin-right: 100px;
     }
-    
+
 
     body { background: white url('/images/mosaico.jpg');
            background-repeat: repeat; 
     }
-    
+
 
 </style>
 
@@ -41,9 +41,7 @@
                             <a class="dropdown-item" href="/plataformas"> Ver/Editar plataformas </a>
                         </div>
 
-                        <!--  <li class="nav-item">
-                            <a href="/videojuegos" class="nav-link">Videojuegos</a>
-                          </li> -->
+
 
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Videojuegos</a>
@@ -67,7 +65,7 @@
                     </li>
 
                     <li class="nav-item">
-                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reviews</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reviews</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #e3f2fd;">    
                             <a class="dropdown-item" href="/reviews/create"> Crear review </a>
                             <a class="dropdown-item" href="/reviews"> Ver/Editar review </a>

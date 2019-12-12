@@ -7,7 +7,7 @@
 @section('base')
 
 
-    <div class="formulario">
+<div class="formulario">
     <form method="post" action="/reviews">
 
         <div>
@@ -15,15 +15,15 @@
             <input type="text" name="titulo" class="form-control">
             {{csrf_field()}}
         </div>     
-       
-        
+
+
         <div>
             <label for="texto">Texto:</label>  <br/>
             <input type="textarea" name="texto" class="form-control">
             {{csrf_field()}}
         </div>   
-        
-        
+
+
         <div>
             <label for="users_id"> Creador: </label> <br/>
             <select name="users_id" id="users-with-column-specific-privileges-are-unable-to-browse_id" class="form-control">
@@ -41,7 +41,7 @@
                 @endforeach
             </select>
         </div>
-   
+
         <div>
             <label for="plataformas_id"> Plataforma: </label> <br/>
             <select name="plataformas_id" id="plataformas_id" class="form-control">
@@ -50,11 +50,10 @@
                 @endforeach
             </select>
         </div>
-   
 
-@endsection
 
-@section('pie')
+        @endsection
 
-@endsection
-        
+        @section('pie')
+
+        @endsection

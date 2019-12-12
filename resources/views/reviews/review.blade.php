@@ -18,7 +18,7 @@
     }
 
     h1 {
-       width: 1800px;
+        width: 1800px;
     }
     #image{
         width: 900px;

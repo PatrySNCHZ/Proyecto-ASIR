@@ -2,12 +2,12 @@
     .buscador{
         margin-right: 100px;
     }
-    
+
 
     body { background: white url('../images/mosaico.jpg');
            background-repeat: repeat; 
     }
-    
+
 
 </style>
 
@@ -61,10 +61,6 @@
                             <a class="dropdown-item" href="/videojuegos/15/plataformas">PC</a>
 
                         </div>
-
-                        <!--  <li class="nav-item">
-                            <a href="/videojuegos" class="nav-link">Videojuegos</a>
-                          </li> -->
 
                     <li class="nav-item">
                         <a href="/veraccesorios" class="nav-link">Accesorios</a>
