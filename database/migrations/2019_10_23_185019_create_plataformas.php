@@ -14,12 +14,13 @@ class CreatePlataformas extends Migration
     public function up()
     {
         Schema::create('plataformas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table-> string("Nombre_Plataforma");
-            $table-> string("Empresa_Plataforma");
+            $table-> integer("empresa_id");
             $table-> integer("Fecha_Salida_Plataforma");
             $table-> decimal("Precio",5,2);
-
+            $table-> boolean("Portatil",1);
+            $table->longText('descripcion');
             $table->timestamps();
         });
     }

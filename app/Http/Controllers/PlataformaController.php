@@ -3,28 +3,43 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Plataforma;
+use App\Empresa;
+use Illuminate\Support\Facades\Input;
 
-class PlataformaController extends Controller
-{
+class PlataformaController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return "Inicio";
-
-        }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        return view ("plataforma.create");
+    public function index() {
+
+        $plataformas = Plataforma::listar_empresas();
+        $empresas = Empresa::all();
+
+        return view("plataformas.index", compact("plataformas", "empresas"));
+    }
+    
+     public function index2() {
+
+        $plataformas = Plataforma::listar_empresas();
+        $empresas = Empresa::all();
+
+        return view("plataformas.index2", compact("plataformas", "empresas"));
+    }
+
+    public function create() {
+
+        $empresas = Empresa::all();
+
+        return view("plataformas.create", compact("empresas"));
     }
 
     /**
@@ -33,9 +48,19 @@ class PlataformaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         //
+        $plataformas = new Plataforma;
+
+        $plataformas->Nombre_Plataforma = $request->Nombre_Plataforma;
+        $plataformas->empresa_id = $request->empresa_id;
+        $plataformas->Fecha_Salida_Plataforma = $request->Fecha_Salida_Plataforma;
+        $plataformas->descripcion = $request->descripcion;
+        $plataformas->Precio = $request->Precio;
+        $plataformas->Portatil = $request->Input('optradio1') === 'true' ? 1 : 0;
+
+        $plataformas->save();
+        return redirect()->back();
     }
 
     /**
@@ -44,9 +69,12 @@ class PlataformaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
+    public function show($id) {
         //
+        $plataformas = Plataforma::findOrFail($id);
+        $empresa = Empresa::all();
+
+        return view("plataformas.show", compact("plataformas", "empresa"));
     }
 
     /**
@@ -55,9 +83,11 @@ class PlataformaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit($id) {
+        $plataforma = Plataforma::findOrFail($id);
+        $empresas = Empresa::all();
+
+        return view("plataformas.edit", compact("plataforma", "empresas"));
     }
 
     /**
@@ -67,9 +97,13 @@ class PlataformaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         //
+        $plataforma = Plataforma::findOrFail($id);
+
+        $plataforma->update($request->all());
+
+        return redirect("/plataformas");
     }
 
     /**
@@ -78,8 +112,13 @@ class PlataformaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
+        $plataforma = Plataforma::findOrFail($id);
+
+        $plataforma->delete();
+
+        return redirect("/plataformas");
     }
+
 }

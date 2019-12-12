@@ -1,17 +1,26 @@
 <!DOCTYPE html>
+
+
+
 <html>
     <head>
-       
+
     </head>
     <body>
-        @include("layouts.banner")
+
+
         @yield("cabecera")
- 
-        @include("layouts.base")
+
+
+
         @yield("base")
-       
-        @include("layouts.pie")
+
+
+
         @yield("pie")
-        
+        Todos los derechos reservados (c) 2019
+
+
+
     </body>
 </html>
